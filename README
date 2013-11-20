@@ -1,0 +1,30 @@
+Chat Server implemetation
+1. Front end REST API
+2. Chat Server 
+
+Real world implementation
+Large scale Erlang based XMPP server (facebook implementation)
+GCM is also XMPP server (google implementation)
+
+Data Store:
+Ideally use Cassandra High Write Store. If sharded by creation time good for querying but issue when storing not load balanced well. 
+
+Currently using MongoDB for ease of implementation
+Original My SQL Tables
+
+User
+<User Name><User Login> <User Id>
+
+Group
+<GroupName>, <GroupID>
+
+Contacts
+<UserId> <GroupId> <ContactId>
+
+LoginDetails
+
+MessageDetails
+
+
+scheduled_messages/failed_messages
+
